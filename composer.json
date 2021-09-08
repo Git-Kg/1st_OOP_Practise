@@ -1,0 +1,11 @@
+{
+    "name": "kg/pt",
+    "require": {},
+
+    "autoload":{
+        "files": ["helper.php"],
+        "psr-4" : {
+            "Utils\\": "src/Utils"
+        }
+    }
+}

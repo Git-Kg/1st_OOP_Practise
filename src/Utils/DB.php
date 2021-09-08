@@ -1,4 +1,9 @@
 <?php 
+   namespace Utils;
+
+   use PDO;
+   use Exception;
+   
    class DB
    {  
       protected $pdo ; 

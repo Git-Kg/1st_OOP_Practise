@@ -1,5 +1,8 @@
 <?php 
-   require_once("db.php");
+   require_once("vendor/autoload.php");
+
+   use Utils\DB;
+   
    $db = new DB;
    $result = $db->edit($_GET['id']); 
    
@@ -19,7 +22,7 @@
     <div class="row justify-content-center">
     
         <div class="col-8">
-            <h2 class=" text-center mt-4"> Update Student</h2>
+            <h2 class=" text-center mt-4"> Edit Student</h2>
             <form action="update.php" method="POST">
 
                 <input type="hidden" name="id" value="<?php echo $result->id ; ?>">
